@@ -4,7 +4,9 @@ import { initScrolling } from './js/scrolling.js';
 import "./components/hero.scss";
 import "./components/procent.scss";
 import { initChange } from "./js/change.js";
-import "./components/soft.scss"
+import "./components/soft.scss";
+import "./components/portfolio.scss";
+
 document.querySelector('#layout').innerHTML = /* html */ `
   <header class="header">
   <div class="header__inner">
@@ -315,6 +317,121 @@ document.querySelector('#layout').innerHTML = /* html */ `
   </div>
 </section>
 
+<section class="portfolio" id="portfolio">
+  <div class="portfolio__inner">
+    <h2 class="portfolio__title">My <span>Portfolio</span></h2>
+
+    <div class="portfolio__list">
+
+      <!-- 1 -->
+      <article class="work-card">
+        <div class="work-card__media">
+          <img src="/site_slides/slide-moz.png" alt="NexVault preview" loading="lazy" />
+        </div>
+
+        <div class="work-card__content">
+          <div class="work-card__meta">
+            <span class="work-card__pill">June 2024</span>
+          </div>
+
+          <h3 class="work-card__heading">
+            Mozilla Wiki Clone
+            <a class="work-card__link" href="#" target="_blank" rel="noreferrer" aria-label="Open project">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"></path>
+                <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
+              </svg>
+            </a>
+          </h3>
+
+          <p class="work-card__desc">
+            A complete copy of one of the most famous wikis for programmers, implemented with our own code
+          </p>
+
+          <div class="work-card__tech">
+            <span class="tech-badge">Vite</span>
+            <span class="tech-badge">TS</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Redux</span>
+            <span class="tech-badge">RTK</span>
+            <span class="tech-badge">Persist</span>
+            <span class="tech-badge">Formik</span>
+            <span class="tech-badge">Yup</span>
+            <span class="tech-badge">PostCSS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="work-card">
+        <div class="work-card__media">
+          <img src="/site_slides/slide-nexVault.png" alt="Moz preview" loading="lazy" />
+        </div>
+
+        <div class="work-card__content">
+          <div class="work-card__meta">
+            <span class="work-card__pill">September 2024</span>
+          </div>
+
+          <h3 class="work-card__heading">
+            NexVault - Buisness
+            <a class="work-card__link" href="#" target="_blank" rel="noreferrer" aria-label="Open project">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"></path>
+                <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
+              </svg>
+            </a>
+          </h3>
+
+          <p class="work-card__desc">A company that is a leader in sales of antivirus software for home users, as well as business protection services for businesses. The website is entirely built with its own code</p>
+
+          <div class="work-card__tech">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">SCSS</span>
+            <span class="tech-badge">JS</span>
+            <span class="tech-badge">Gulp</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="work-card">
+        <div class="work-card__media">
+          <img src="/site_slides/SiteNovak.psd.png" alt="Novak bank preview" loading="lazy" />
+        </div>
+
+        <div class="work-card__content">
+          <div class="work-card__meta">
+            <span class="work-card__pill">JUANUARY 2026</span>
+          </div>
+
+          <h3 class="work-card__heading">
+            Portfolio - Gleb Novikov
+            <a class="work-card__link" href="#" target="_blank" rel="noreferrer" aria-label="Open project">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"></path>
+                <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
+              </svg>
+            </a>
+          </h3>
+
+          <p class="work-card__desc">
+            Business card of one of our clients, displayed with the client's permission. The website was created using the unique “scroll up style
+          </p>
+
+          <div class="work-card__tech">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">SCSS</span>
+            <span class="tech-badge">JS</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Redux</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
 `
 initScrolling();
 initChange();

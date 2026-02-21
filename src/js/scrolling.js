@@ -4,7 +4,7 @@ export function initScrolling() {
   if (!header) return;
 
   function handleScroll() {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 10 && window.scrollY < 780) {
       header.classList.add('header--scrolled');
     } else {
       header.classList.remove('header--scrolled');
