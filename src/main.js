@@ -6,6 +6,8 @@ import "./components/procent.scss";
 import { initChange } from "./js/change.js";
 import "./components/soft.scss";
 import "./components/portfolio.scss";
+import "./components/experience.scss";
+import portfolio from "./html/main.html"; 
 
 document.querySelector('#layout').innerHTML = /* html */ `
   <header class="header">
@@ -25,7 +27,7 @@ document.querySelector('#layout').innerHTML = /* html */ `
       <a class="header__link" href="#contacts">Contacts</a>
     </nav>
   </div>
-</header> 
+</header>
 
 
 <section class="hero" id="about">
@@ -42,7 +44,7 @@ document.querySelector('#layout').innerHTML = /* html */ `
         enjoy yourself
       </p>
 
-      
+
     </div>
 
     <!-- Right -->
@@ -65,7 +67,7 @@ document.querySelector('#layout').innerHTML = /* html */ `
     </h2>
 
     <div class="soft-skills__list">
-      
+
       <div class="soft-card">
         <span class="soft-card__dot"></span>
         <p>
@@ -109,24 +111,24 @@ document.querySelector('#layout').innerHTML = /* html */ `
         <span class="soft-card__dot"></span>
         <p>I accurately identify client needs</p>
       </div>
-      
-     
+
+
 
       <div class="soft-card">
         <span class="soft-card__dot"></span>
         <p>I deliver practical, business-focused solutions</p>
-      </div> 
+      </div>
 
 
       <div class="soft-card">
         <span class="soft-card__dot"></span>
         <p>I handle conflict situations professionally</p>
-      </div> 
+      </div>
 
       <div class="soft-card">
         <span class="soft-card__dot"></span>
         <p>I welcome constructive feedback</p>
-      </div> 
+      </div>
 
       <div class="soft-card">
         <span class="soft-card__dot"></span>
@@ -147,15 +149,15 @@ document.querySelector('#layout').innerHTML = /* html */ `
   </div>
 </section>
 
-<section class="skills"> 
+<section class="skills">
   <div class="skill__inner">
         <div class="header-skill-top">
           <span id="word-hard">Hard</span> Skills
-        </div>      
+        </div>
         <div class="element">
             <p class="header-skill">
                 HTML
-            </p> 
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -167,13 +169,13 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
-                
+
             </div>
         </div>
         <div class="element">
             <p class="header-skill">
                 CSS
-            </p> 
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -185,13 +187,13 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
-                
+
             </div>
         </div>
         <div class="element">
             <p class="header-skill">
                 SASS
-            </p> 
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -203,13 +205,13 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
                 <div class="charge-block is-empty"></div>
-                
+
             </div>
         </div>
         <div class="element">
             <p class="header-skill">
-                JavaScript
-            </p> 
+                JS
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -221,13 +223,13 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
-                
+
             </div>
         </div>
         <div class="element">
             <p class="header-skill">
                 PostCSS
-            </p> 
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -239,13 +241,13 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block is-empty"></div>
                 <div class="charge-block is-empty"></div>
                 <div class="charge-block is-empty"></div>
-                
+
             </div>
         </div>
         <div class="element">
             <p class="header-skill">
                 Bootstrap
-            </p> 
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -257,13 +259,13 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
                 <div class="charge-block is-empty"></div>
-                
+
             </div>
         </div>
         <div class="element">
             <p class="header-skill">
                 Gap
-            </p> 
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -275,13 +277,13 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
                 <div class="charge-block is-empty"></div>
-               
+
             </div>
         </div>
         <div class="element">
             <p class="header-skill">
                 Vite
-            </p> 
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -293,13 +295,13 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
-                
+
             </div>
         </div>
         <div class="element">
             <p class="header-skill">
                 GIT
-            </p> 
+            </p>
             <div class="line"></div>
             <div class="battarey">
                 <div class="charge-block"></div>
@@ -311,7 +313,7 @@ document.querySelector('#layout').innerHTML = /* html */ `
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
                 <div class="charge-block"></div>
-                
+
             </div>
         </div>
   </div>
@@ -349,15 +351,35 @@ document.querySelector('#layout').innerHTML = /* html */ `
           </p>
 
           <div class="work-card__tech">
-            <span class="tech-badge">Vite</span>
-            <span class="tech-badge">TS</span>
-            <span class="tech-badge">React</span>
-            <span class="tech-badge">Redux</span>
-            <span class="tech-badge">RTK</span>
-            <span class="tech-badge">Persist</span>
-            <span class="tech-badge">Formik</span>
-            <span class="tech-badge">Yup</span>
-            <span class="tech-badge">PostCSS</span>
+
+            <div class="tech-icon">
+              <img src="/icons/vite.svg" alt="Vite">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/vitest.svg" alt="Vitest">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/postCSS.svg" alt="PostCSS">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/sass.png" alt="Sass">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/css.png" alt="CSS">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/js.svg" alt="JavaScript">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/html5.png" alt="HTML5">
+            </div>
+
           </div>
         </div>
       </article>
@@ -386,10 +408,33 @@ document.querySelector('#layout').innerHTML = /* html */ `
           <p class="work-card__desc">A company that is a leader in sales of antivirus software for home users, as well as business protection services for businesses. The website is entirely built with its own code</p>
 
           <div class="work-card__tech">
-            <span class="tech-badge">HTML</span>
-            <span class="tech-badge">SCSS</span>
-            <span class="tech-badge">JS</span>
-            <span class="tech-badge">Gulp</span>
+
+            <div class="tech-icon">
+              <img src="/icons/vite.svg" alt="Vite" >
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/vitest.svg" alt="Vitest">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/postCSS.svg" alt="PostCSS">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/sass.png" alt="Sass">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/css.png" alt="CSS">
+            </div>
+            <div class="tech-icon">
+              <img src="/icons/js.svg" alt="JavaScript">
+            </div>
+
+            <div class="tech-icon">
+              <img src="/icons/html5.png" alt="HTML5">
+            </div>
           </div>
         </div>
       </article>
@@ -419,12 +464,197 @@ document.querySelector('#layout').innerHTML = /* html */ `
             Business card of one of our clients, displayed with the client's permission. The website was created using the unique “scroll up style
           </p>
 
-          <div class="work-card__tech">
-            <span class="tech-badge">HTML</span>
-            <span class="tech-badge">SCSS</span>
-            <span class="tech-badge">JS</span>
-            <span class="tech-badge">React</span>
-            <span class="tech-badge">Redux</span>
+            <div class="work-card__tech">
+
+              <div class="tech-icon">
+                <img src="/icons/vite.svg" alt="Vite">
+              </div>
+
+              <div class="tech-icon">
+                <img src="/icons/vitest.svg" alt="Vitest">
+              </div>
+
+              <div class="tech-icon">
+                <img src="/icons/postCSS.svg" alt="PostCSS">
+              </div>
+
+              <div class="tech-icon">
+                <img src="/icons/sass.png" alt="Sass">
+              </div>
+
+              <div class="tech-icon">
+                <img src="/icons/css.png" alt="CSS">
+              </div>
+
+              <div class="tech-icon">
+                <img src="/icons/js.svg" alt="JavaScript">
+              </div>
+
+              <div class="tech-icon">
+                <img src="/icons/html5.png" alt="HTML5">
+              </div>
+
+            </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="experience" id="work">
+  <div class="experience__inner">
+    <h2 class="experience__title">Work <span>Experience</span></h2>
+
+    <div class="timeline">
+
+      <!-- item 1 -->
+      <article class="timeline__item">
+        <div class="timeline__rail">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card__meta">
+            <span class="exp-card__pill">September 2022 — Present</span>
+          </div>
+
+          <h3 class="exp-card__heading">
+            VK Team
+            <a class="exp-card__link" href="#" target="_blank" rel="noreferrer" aria-label="Open company / project">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"></path>
+                <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
+              </svg>
+            </a>
+          </h3>
+
+          <p class="exp-card__role">Frontend Engineer</p>
+
+          <p class="exp-card__desc">
+            Development and support of the frontend of the company's internal tools,
+            automation of development processes.
+          </p>
+
+          <div class="exp-card__tech">
+            <div class="tech-icon"><img src="/icons/js.svg" alt="JavaScript"></div>
+            <div class="tech-icon"><img src="/icons/postCSS.svg" alt="PostCSS"></div>
+            <div class="tech-icon"><img src="/icons/vite.svg" alt="Vite"></div>
+            <div class="tech-icon"><img src="/icons/css.png" alt="CSS"></div>
+            <div class="tech-icon"><img src="/icons/html5.png" alt="HTML5"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- item 2 -->
+      <article class="timeline__item">
+        <div class="timeline__rail">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card__meta">
+            <span class="exp-card__pill">June 2021 — September 2022</span>
+          </div>
+
+          <h3 class="exp-card__heading">
+            Digital Element
+            <a class="exp-card__link" href="#" target="_blank" rel="noreferrer" aria-label="Open company / project">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"></path>
+                <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
+              </svg>
+            </a>
+          </h3>
+
+          <p class="exp-card__role">Frontend Developer</p>
+
+          <p class="exp-card__desc">
+            Development of e-commerce and fintech projects. Building UI components, writing scripts,
+            improving performance and maintaining code quality.
+          </p>
+
+          <div class="exp-card__tech">
+            <div class="tech-icon"><img src="/icons/js.svg" alt="JavaScript"></div>
+            <div class="tech-icon"><img src="/icons/css.png" alt="CSS"></div>
+            <div class="tech-icon"><img src="/icons/sass.png" alt="Sass"></div>
+            <div class="tech-icon"><img src="/icons/postCSS.svg" alt="PostCSS"></div>
+            <div class="tech-icon"><img src="/icons/vitest.svg" alt="Vitest"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- item 3 -->
+      <article class="timeline__item">
+        <div class="timeline__rail">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card__meta">
+            <span class="exp-card__pill">September 2020 — May 2021</span>
+          </div>
+
+          <h3 class="exp-card__heading">
+            Ribba
+            <a class="exp-card__link" href="#" target="_blank" rel="noreferrer" aria-label="Open company / project">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"></path>
+                <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
+              </svg>
+            </a>
+          </h3>
+
+          <p class="exp-card__role">Frontend Developer</p>
+
+          <p class="exp-card__desc">
+            Development of landing pages and e-commerce projects. Improving layouts and delivering clean UI.
+          </p>
+
+          <div class="exp-card__tech">
+            <div class="tech-icon"><img src="/icons/html5.png" alt="HTML5"></div>
+            <div class="tech-icon"><img src="/icons/css.png" alt="CSS"></div>
+            <div class="tech-icon"><img src="/icons/js.svg" alt="JavaScript"></div>
+            <div class="tech-icon"><img src="/icons/sass.png" alt="Sass"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- item 4 -->
+      <article class="timeline__item">
+        <div class="timeline__rail">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-card__meta">
+            <span class="exp-card__pill">July 2019 — August 2020</span>
+          </div>
+
+          <h3 class="exp-card__heading">
+            Freelance
+            <a class="exp-card__link" href="#" target="_blank" rel="noreferrer" aria-label="Open company / project">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"></path>
+                <path d="M5 5h6v2H7v10h10v-4h2v6H5V5z"></path>
+              </svg>
+            </a>
+          </h3>
+
+          <p class="exp-card__role">Web Developer</p>
+
+          <p class="exp-card__desc">
+            Website development, layout fixes, small scripts and improvements for client projects.
+          </p>
+
+          <div class="exp-card__tech">
+            <div class="tech-icon"><img src="/icons/html5.png" alt="HTML5"></div>
+            <div class="tech-icon"><img src="/icons/css.png" alt="CSS"></div>
+            <div class="tech-icon"><img src="/icons/js.svg" alt="JavaScript"></div>
           </div>
         </div>
       </article>
