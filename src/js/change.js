@@ -11,7 +11,7 @@ export function initChange() {
         }
       });
     },
-    { threshold: 0.15 }
+    { threshold: 0.9 }
   );
 
   batteries.forEach((b) => io.observe(b));

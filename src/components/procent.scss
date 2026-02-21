@@ -17,16 +17,16 @@
 }
 
 .header-skill-top {
-    font-size: clamp(2.5rem, 8vw, 8rem);
+    font-size: clamp(3rem, 8vw, 6rem);
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    padding-left: 2rem;
-    padding-bottom: 4rem;
+    // padding-left: 4rem;
+    // padding-bottom: 1rem;
     color: #fff;
-
+    align-self: center;
     #word-hard {
-        color: #ae04d0;
-        text-shadow: 0 0 4px #d400ff;
+        color: #d400ff;
+        // transform: scale(2);
     }
 }
 
@@ -37,8 +37,8 @@
     align-self: center;
     align-items: center;
     background: linear-gradient(180deg, #28272730 0%, #2f2e2e23 100%);
-    width: 98%;
-    height: clamp(60px, 10vw, 120px);
+    width: 88%;
+    height: clamp(60px, 10vw, 110px);
 
     border-radius: 1.5rem;
     box-shadow:
@@ -123,23 +123,15 @@
 }  
 
 .battarey {
-  .charge-block::before {
-    background: linear-gradient(180deg, #54f40a 0%, #1eb806 100%);
-  }
-
-  .charge-block:nth-child(1)::before  { background: hsl(120, 85%, 45%); }
-  .charge-block:nth-child(2)::before  { background: hsl(110, 85%, 45%); }
-  .charge-block:nth-child(3)::before  { background: hsl(100, 85%, 45%); }
-  .charge-block:nth-child(4)::before  { background: hsl(90, 85%, 45%); }
-  .charge-block:nth-child(5)::before  { background: hsl(80, 85%, 48%); }
-  .charge-block:nth-child(6)::before  { background: hsl(70, 85%, 50%); }
-  .charge-block:nth-child(7)::before  { background: hsl(60, 85%, 52%); }
-  .charge-block:nth-child(8)::before  { background: hsl(50, 85%, 50%); }
-  .charge-block:nth-child(9)::before  { background: hsl(40, 85%, 48%); }
-  .charge-block:nth-child(10)::before { background: hsl(30, 85%, 46%); }
-  .charge-block:nth-child(11)::before { background: hsl(20, 85%, 45%); }
-  .charge-block:nth-child(12)::before { background: hsl(10, 85%, 45%); }
-  .charge-block:nth-child(13)::before { background: hsl(0, 85%, 45%); }
+  .charge-block:nth-child(1)::before  { background: hsl(0, 90%, 45%); }
+  .charge-block:nth-child(2)::before  { background: hsl(15, 88%, 46%); }
+  .charge-block:nth-child(3)::before  { background: hsl(30, 86%, 47%); }
+  .charge-block:nth-child(4)::before  { background: hsl(45, 84%, 49%); }
+  .charge-block:nth-child(5)::before  { background: hsl(60, 82%, 50%); }
+  .charge-block:nth-child(6)::before  { background: hsl(75, 84%, 48%); }
+  .charge-block:nth-child(7)::before  { background: hsl(90, 86%, 46%); }
+  .charge-block:nth-child(8)::before  { background: hsl(105, 88%, 45%); }
+  .charge-block:nth-child(9)::before  { background: hsl(120, 90%, 44%); }
 }
 
 .charge-block.is-empty::before {

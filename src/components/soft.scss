@@ -1,0 +1,84 @@
+.soft-skills {
+    padding: 0 20px;
+    padding-bottom: 120px;
+    font-family: "Inter", sans-serif;
+}
+
+.soft-skills__inner {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.soft-skills__title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 500;
+    margin-bottom: 80px;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    padding-left: 4rem;
+
+    span {
+        color: #d400ff;
+    }
+}
+
+
+.soft-skills__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    justify-items: center;
+}
+
+@media (max-width: 1100px) {
+  .soft-skills__list {
+    grid-template-columns: 1fr;
+  }
+} 
+
+.soft-card {
+    width: min(1150px, 80%);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 35px 40px;
+    border-radius: 28px;
+
+    background: linear-gradient(180deg,
+            rgba(40, 39, 39, 0.25) 0%,
+            rgba(47, 46, 46, 0.15) 100%);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(10px);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.soft-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.65),
+        0 0 20px rgba(170, 120, 255, 0.2);
+}
+
+.soft-card__dot {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    border-radius: 50%;
+
+    background: #b47bff;
+    box-shadow: 0 0 12px rgba(180, 123, 255, 0.6);
+}
+
+.soft-card p {
+    color: #fff;
+    font-size: clamp(1.5rem, 1.5vw, 1.6rem);
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+}
