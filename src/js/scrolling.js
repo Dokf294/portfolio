@@ -1,7 +1,7 @@
 export function initScrolling() {
   const header = document.querySelector('.header');
-  
-  if (!header) return; 
+
+  if (!header) return;
 
   function handleScroll() {
     if (window.scrollY > 10) {
@@ -12,6 +12,6 @@ export function initScrolling() {
   }
 
   window.addEventListener('scroll', handleScroll);
-  
-  handleScroll(); 
+
+  handleScroll();
 }

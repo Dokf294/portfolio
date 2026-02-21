@@ -1,0 +1,148 @@
+.skills {
+    min-height: calc(100vh - 64px);
+    align-items: center;
+
+
+}
+
+.skill__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    row-gap: 4rem;
+}
+
+.header-skill-top {
+    font-size: clamp(2.5rem, 8vw, 8rem);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    color: #fff;
+
+    #word-hard {
+        color: #ae04d0;
+        text-shadow: 0 0 4px #d400ff;
+    }
+}
+
+.element {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    background: linear-gradient(180deg, #28272730 0%, #2f2e2e23 100%);
+    width: 98%;
+    height: clamp(60px, 10vw, 120px);
+
+    border-radius: 1.5rem;
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.5);
+    
+    .header-skill {
+        color: #fff;
+        font-size: clamp(.8rem, 3.5vw, 2.5rem);
+        line-height: .9;
+        padding-left: 1rem;
+        font-family: "monospace", sans-serif;
+        font-weight: 600;
+
+    }
+
+    .line {
+        height: 85%;
+        width: 4px;
+        background-color: #fff;
+        margin: 10px;
+        border-radius: 1rem;
+    }
+
+    .battarey {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // background-color: red;
+
+        width: 85%;
+        height: 100%;
+        gap: clamp(.7rem, 1.8vw, 5rem);
+        padding-right: 10px;
+
+        .charge-block {
+            position: relative;
+            overflow: hidden;
+            
+            border: 2px solid #fff;
+            border-radius: .8rem;
+            width: clamp(60px, 20%, 1000px);
+            height: 80%;
+            background: rgba(255, 255, 255, 0.06);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.08),
+                0 10px 24px rgba(0, 0, 0, .35);
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+
+                background: linear-gradient(180deg, #54f40a 0%, #1eb806 100%);
+                transform-origin: bottom;
+                transform: scaleY(0); 
+                transition: transform 1.2s ease;
+            }
+        }
+    }
+
+} 
+
+.battarey.is-charging {
+  .charge-block::before {
+    transform: scaleY(1);
+  }
+
+  .charge-block:nth-child(1)::before { transition-delay: 0ms; }
+  .charge-block:nth-child(2)::before { transition-delay: 140ms; }
+  .charge-block:nth-child(3)::before { transition-delay: 280ms; }
+  .charge-block:nth-child(4)::before { transition-delay: 420ms; }
+  .charge-block:nth-child(5)::before { transition-delay: 560ms; }
+  .charge-block:nth-child(6)::before { transition-delay: 700ms; }
+  .charge-block:nth-child(7)::before { transition-delay: 840ms; }
+  .charge-block:nth-child(8)::before { transition-delay: 980ms; }
+  .charge-block:nth-child(9)::before { transition-delay: 1120ms; }
+  .charge-block:nth-child(10)::before { transition-delay: 1260ms; }
+  .charge-block:nth-child(11)::before { transition-delay: 1400ms; }
+  .charge-block:nth-child(12)::before { transition-delay: 1480ms; }
+  .charge-block:nth-child(13)::before { transition-delay: 1550ms; }
+  
+}  
+
+.battarey {
+  .charge-block::before {
+    background: linear-gradient(180deg, #54f40a 0%, #1eb806 100%);
+  }
+
+  .charge-block:nth-child(1)::before  { background: hsl(120, 85%, 45%); }
+  .charge-block:nth-child(2)::before  { background: hsl(110, 85%, 45%); }
+  .charge-block:nth-child(3)::before  { background: hsl(100, 85%, 45%); }
+  .charge-block:nth-child(4)::before  { background: hsl(90, 85%, 45%); }
+  .charge-block:nth-child(5)::before  { background: hsl(80, 85%, 48%); }
+  .charge-block:nth-child(6)::before  { background: hsl(70, 85%, 50%); }
+  .charge-block:nth-child(7)::before  { background: hsl(60, 85%, 52%); }
+  .charge-block:nth-child(8)::before  { background: hsl(50, 85%, 50%); }
+  .charge-block:nth-child(9)::before  { background: hsl(40, 85%, 48%); }
+  .charge-block:nth-child(10)::before { background: hsl(30, 85%, 46%); }
+  .charge-block:nth-child(11)::before { background: hsl(20, 85%, 45%); }
+  .charge-block:nth-child(12)::before { background: hsl(10, 85%, 45%); }
+  .charge-block:nth-child(13)::before { background: hsl(0, 85%, 45%); }
+}
+
+.charge-block.is-empty::before {
+  transform: scaleY(0) !important;  
+  transition: none;                  
+}

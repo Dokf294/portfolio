@@ -1,17 +1,13 @@
 .hero {
-  min-height: calc(100vh - 64px); 
+  min-height: calc(100vh - 300px);
   align-items: center;
 
-  background: radial-gradient(
-      900px 500px at 20% 20%,
-      rgba(165, 90, 255, 0.12),
-      transparent 60%
-    ),
-    radial-gradient(
-      700px 420px at 70% 40%,
+  background: radial-gradient(900px 500px at 20% 20%,
+      rgba(157, 0, 255, 0.12),
+      transparent 60%),
+    radial-gradient(700px 420px at 70% 40%,
       rgba(255, 80, 200, 0.10),
-      transparent 55%
-    )
+      transparent 55%)
 }
 
 .hero__inner {
@@ -19,20 +15,21 @@
   max-width: 1200px;
   margin: 0 auto;
 
-  padding: 10rem 0;
+  padding: 10rem 0 0 1rem;
 
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 28px;
   align-items: center;
   font-family: "Inter", sans-serif;
+  transition: max-width 1s ease-in, gap 1s ease-in;
 }
 
 .hero__content {
   color: rgba(255, 255, 255, 0.92);
 }
 
-.hero__rest{
+.hero__rest {
   margin: 0 0 10px;
   font-size: clamp(69px, 3.4vw, 94px);
   line-height: 1.15;
@@ -40,9 +37,7 @@
   letter-spacing: -0.02em;
 }
 
-.hero__hello {
-  color: rgba(222, 91, 255, 0.95); 
-}
+
 
 .hero__title {
   margin: 0 0 18px;
@@ -50,8 +45,8 @@
   line-height: 1.08;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: aliceblue; 
-  text-decoration: underline rgb(107, 0, 128) dotted;
+  color: aliceblue;
+  text-decoration: underline #9f04bd dotted;
 }
 
 .hero__subtitle {
@@ -79,11 +74,9 @@
     width: 420px;
     height: 420px;
     border-radius: 50%;
-    background: radial-gradient(
-      closest-side,
-      rgba(170, 120, 255, 0.18),
-      transparent 70%
-    );
+    background: radial-gradient(closest-side,
+        rgba(170, 120, 255, 0.18),
+        transparent 70%);
     filter: blur(2px);
     pointer-events: none;
   }
@@ -96,6 +89,22 @@
 
   filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.45));
   transform: translateY(2px);
+}
+
+.hero__img {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 20px 50px rgba(168, 85, 247, 0.35));
+  }
+
+  50% {
+    filter: drop-shadow(0 25px 70px rgba(255, 90, 220, 0.55));
+  }
 }
 
 @media (max-width: 1120px) {
@@ -117,13 +126,13 @@
   .hero__img {
     width: min(560px, 92vw);
   }
-} 
+}
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .hero__inner {
     max-width: 1550px;
     grid-template-columns: 1.2fr 1fr;
     gap: 120px;
-}
+  }
 
 }
