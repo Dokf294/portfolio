@@ -1,8 +1,6 @@
 .skills {
     min-height: calc(100vh - 64px);
     align-items: center;
-
-
 }
 
 .skill__inner {
@@ -20,13 +18,11 @@
     font-size: clamp(3rem, 8vw, 6rem);
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    // padding-left: 4rem;
-    // padding-bottom: 1rem;
+    
     color: #fff;
     align-self: center;
     #word-hard {
         color: #d400ff;
-        // transform: scale(2);
     }
 }
 
@@ -66,7 +62,6 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        // background-color: red;
 
         width: 85%;
         height: 100%;

@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 110px 20px;
+    padding: 110px 20px 0 20px;
     font-family: "Inter", sans-serif;
 }
 
@@ -166,9 +166,14 @@
 
 .tech-icon img {
     width: 48px;
-    height: 28px;
+    height: 33px;
     object-fit: contain;
     filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.15));
+}
+
+#lua img {
+    width: 42px;
+    height: 42px;
 }
 
 .tech-icon:nth-child(5) img {
