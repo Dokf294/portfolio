@@ -1,4 +1,4 @@
-# 😎 Portfolio (Vite + Vanilla) 😎
+# 😎 Portfolio 😎
 
 ## 👋 Hello!
 This is my portfolio website — here you can learn more about me and see my projects.
