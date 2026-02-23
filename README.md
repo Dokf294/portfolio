@@ -41,9 +41,6 @@ npm install
 ```
 npm run dev
 ```
-## Vite will print a local URL in the terminal (usually):
-
-### http://localhost:5173/ 
 
 ## 📦 Build for Production
 
