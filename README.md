@@ -51,6 +51,3 @@ npm run dev
 
 ### Run the built version locally (same as production):
 ``` npm run preview ``` 
-
-## 👉DEMO VIEW SITE
-![demo](inc/mozzila-cloneDemo.gif)
