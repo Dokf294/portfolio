@@ -7,9 +7,9 @@ export function initViewer() {
     const list = [slide1, slide2, slide3];
 
     const url = {
-        "slide-one": "/site_slides/slide-moz.png",
-        "slide-two": "/site_slides/slide-nexVault.png",
-        "slide-three": "/site_slides/SiteNovak.psd.png"
+        "slide-one": "./site_slides/slide-moz.png",
+        "slide-two": "./site_slides/slide-nexVault.png",
+        "slide-three": "./site_slides/SiteNovak.psd.png"
     };
 
     const viewer = document.querySelector(".viewer");
